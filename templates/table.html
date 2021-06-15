@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>table demo</title>
+    </head>
+    <body>
+        <div>
+            <h1>留言板</h1>
+        </div>
+        <div>
+            <form action="/demo_mysql_message" method="POST">
+                <p>name:<input name="user" type="text" style="margin-left: 15px;" autocomplete="off"></p>
+                <p>content:<input name="content" type="text" style="width: 300px; height: 150px;"></p>
+                <p><input type="submit" value="繳交" style="margin-left: 175px;"></p>
+            </form>
+        </div>
+        <div>
+            message:
+            {{data}}
+        </div>
+    </body>
+</html>
+
